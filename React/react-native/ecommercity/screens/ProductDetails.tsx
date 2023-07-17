@@ -1,0 +1,11 @@
+import { StyleSheet, Text, View } from "react-native"
+
+const ProductDetails = () => {
+  return (
+    <View>
+        <Text>Details</Text>
+    </View>
+  )
+}
+
+export default ProductDetails
