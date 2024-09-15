@@ -3,10 +3,14 @@ import Button from './components/button/Button'
 import Card from './components/card/Card'
 import Form from './components/form/Form'
 import SMSList from './components/sms-list/SMSList'
+import GameList from './components/games-list/GameList'
+import { GlobalStyle } from './components/games-list/GameList.styled'
 import { Toaster } from 'sonner'
 
 function App() {
   return (
+    <>
+    <GlobalStyle />
     <div style={{ position: 'relative' }}>
       <Button label="Primary Button" primary />
       <Button label="Secondary Button" size="medium" />
@@ -41,8 +45,10 @@ function App() {
         btnText="Submit"
       />
       <SMSList />
+      <GameList />
       <Toaster position="top-right" />
     </div>
+    </>
   )
 }
 
